@@ -1,7 +1,10 @@
-const ListView = () => {
+import ShopItem from "../ShopItem/ShopItem";
+import './listView.modules.css';
+
+const ListView = ({ items }) => {
   return (
-    <div>
-      
+    <div className='listView'>
+      {items.map((el, ind) => (<ShopItem item={el} key={ind} />))}
     </div>
   )
 }

@@ -1,10 +1,11 @@
-const CardsView = ( {cards} ) => {
+import ShopCard from "../ShopCard/ShopCard"
+import './cardsView.modules.css';
 
-  console.log(cards);
+const CardsView = ({ cards }) => {
 
   return (
-    <div>
-      
+    <div className='cardsView'>
+      {cards.map((el, ind) => (<ShopCard items={el} key={ind} />))}
     </div>
   )
 }

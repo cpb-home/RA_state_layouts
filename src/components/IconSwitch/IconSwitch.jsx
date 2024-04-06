@@ -1,11 +1,8 @@
 const IconSwitch = ( {icon, onSwitch} ) => {
 
-  console.log(icon);
-  console.log(onSwitch);
-
   return (
-    <div>
-      
+    <div className="icon">
+      <span className="material-icons" onClick={() => onSwitch(icon === 'view_list' ? 'view_module' : 'view_list')}>{icon}</span>
     </div>
   )
 }
