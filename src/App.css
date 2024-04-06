@@ -6,9 +6,14 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-y:scroll;
+}
+
 body {
     position: relative;
     padding: 30px;
+    
 }
 
 .icon {
