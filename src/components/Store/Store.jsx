@@ -8,15 +8,14 @@ const Store = () => {
 
   const [icon, setIcon] = useState('view_module');
   const [view, setView] = useState(<CardsView cards={products} />);
-  console.log(view)
   
   const onSwitch = (newIcon) => {
     setIcon(newIcon);
 
     if (newIcon === 'view_module') {
-      setView(<CardsView cards={products} />);console.log(view)
+      setView(<CardsView cards={products} />);
     } else {
-      setView(<ListView items={products} />);console.log(view)
+      setView(<ListView items={products} />);
     }
   };
 
